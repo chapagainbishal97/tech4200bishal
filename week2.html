@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bishal Chapagain - Personal Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0fe;
+            color: #2c3e50;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50;
+            padding: 12px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #1a252f;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            border: 3px solid #2c3e50;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .profile-header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .profile-header h3 {
+            color: #7f8c8d;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        /* Sections */
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8f0fe;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Hobbies List */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Education Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        table, th, td {
+            border: 1px solid #dce3f0;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 11px 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px 14px;
+            color: #555;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f7fd;
+        }
+
+        /* Experience List */
+        ol {
+            padding-left: 20px;
+        }
+
+        /* Connect Links */
+        .connect-links a {
+            display: inline-block;
+            margin: 6px 8px 6px 0;
+            padding: 8px 16px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .connect-links a:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="bishal.jpg" alt="Bishal Chapagain">
+            <div>
+                <h1>Bishal Chapagain</h1>
+                <h3>IT Student &mdash; Master's in Information Technology</h3>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is <b>Bishal Chapagain</b>. I am currently pursuing a Master's in IT.
+                I am passionate about technology, data analysis, and continuous learning.
+            </p>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Programming and coding</li>
+                <li>Reading technology blogs</li>
+                <li>Playing cricket</li>
+                <li>Watching movies</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section" id="education">
+            <h2>My Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Bachelors in IT</td>
+                    <td>Tribhuvan University</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Masters in IT</td>
+                    <td>Kaplan Business School</td>
+                    <td>Present</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Experience -->
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <ol>
+                <li>IT Manager at Edhansar Pvt. Ltd.</li>
+                <li>Disability Support Worker at Coinda Pty Ltd</li>
+            </ol>
+        </div>
+
+        <!-- Connect -->
+        <div class="section" id="connect">
+            <h2>Connect with Me</h2>
+            <div class="connect-links">
+                <a href="https://www.linkedin.com/in/chapagainbishal/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/chapagainbishal97" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/bishal.chapagain.35" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
