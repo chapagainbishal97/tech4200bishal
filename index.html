@@ -1,257 +1,153 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>Bishal Chapagain - Personal Profile</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishal Chapagain | Portfolio</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f0fe;
-            color: #2c3e50;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #2c3e50;
-            padding: 12px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            padding: 6px 12px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #1a252f;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 860px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* Profile Header */
-        .profile-header {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-bottom: 30px;
-        }
-
-        .profile-header img {
-            border-radius: 50%;
-            border: 3px solid #2c3e50;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-        }
-
-        .profile-header h1 {
-            font-size: 28px;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .profile-header h3 {
-            color: #7f8c8d;
-            font-weight: normal;
-            font-size: 16px;
-        }
-
-        /* Sections */
-        .section {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 20px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e8f0fe;
-        }
-
-        p {
-            line-height: 1.7;
-            color: #555;
-        }
-
-        /* Hobbies List */
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li, ol li {
-            margin-bottom: 8px;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        /* Education Table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 5px;
-        }
-
-        table, th, td {
-            border: 1px solid #dce3f0;
-        }
-
-        th {
-            background-color: #2c3e50;
-            color: white;
-            padding: 11px 14px;
-            text-align: left;
-        }
-
-        td {
-            padding: 10px 14px;
-            color: #555;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f4f7fd;
-        }
-
-        /* Experience List */
-        ol {
-            padding-left: 20px;
-        }
-
-        /* Connect Links */
-        .connect-links a {
-            display: inline-block;
-            margin: 6px 8px 6px 0;
-            padding: 8px 16px;
-            background-color: #2c3e50;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            transition: background-color 0.3s;
-        }
-
-        .connect-links a:hover {
-            background-color: #1a252f;
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#connect">Connect</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-
-        <!-- Profile Header -->
-        <div class="profile-header">
-            <img src="bishal.jpg" alt="Bishal Chapagain">
-            <div>
-                <h1>Bishal Chapagain</h1>
-                <h3>IT Student &mdash; Master's in Information Technology</h3>
-            </div>
-        </div>
-
-        <!-- About Me -->
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is <b>Bishal Chapagain</b>. I am currently pursuing a Master's in IT.
-                I am passionate about technology, data analysis, and continuous learning.
-            </p>
-        </div>
-
-        <!-- Hobbies -->
-        <div class="section" id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Programming and coding</li>
-                <li>Reading technology blogs</li>
-                <li>Playing cricket</li>
-                <li>Watching movies</li>
-                <li>Travelling</li>
-            </ul>
-        </div>
-
-        <!-- Education -->
-        <div class="section" id="education">
-            <h2>My Education</h2>
-            <table>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
-                <tr>
-                    <td>Bachelors in IT</td>
-                    <td>Tribhuvan University</td>
-                    <td>2020</td>
-                </tr>
-                <tr>
-                    <td>Masters in IT</td>
-                    <td>Kaplan Business School</td>
-                    <td>Present</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Experience -->
-        <div class="section" id="experience">
-            <h2>Experience</h2>
-            <ol>
-                <li>IT Manager at Edhansar Pvt. Ltd.</li>
-                <li>Disability Support Worker at Coinda Pty Ltd</li>
-            </ol>
-        </div>
-
-        <!-- Connect -->
-        <div class="section" id="connect">
-            <h2>Connect with Me</h2>
-            <div class="connect-links">
-                <a href="https://www.linkedin.com/in/chapagainbishal/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/chapagainbishal97" target="_blank">GitHub</a>
-                <a href="https://www.facebook.com/bishal.chapagain.35" target="_blank">Facebook</a>
-            </div>
-        </div>
-
+<!-- Sticky navigation bar -->
+<nav class="glass-nav">
+    <div class="nav-container">
+        <button class="nav-btn" data-page="home">Home</button>
+        <button class="nav-btn" data-page="academics">Academics</button>
+        <button class="nav-btn" data-page="experience">Experience</button>
+        <button class="nav-btn" data-page="hobbies">Hobbies</button>
+        <button class="nav-btn" data-page="connect">Connect</button>
     </div>
+</nav>
 
+<div class="main-wrapper">
+    <div class="pages-container">
+
+        <!-- Home page-->
+        <div id="home" class="page">
+            <div class="card">
+                <div class="profile-hero">
+                     <div class="avatar-circle">
+                        <img src="bishal.jpg" alt="Bishal Chapagain">
+                     </div>
+                    <div class="hero-text">
+                        <h1>Bishal Chapagain</h1>
+                        <div class="tagline">Master's in IT | Tech Enthusiast & Problem Solver</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hi! I am Bishal Chapagain, Web Developer and currently pursing <strong>Masters of Information Technology </strong>at Kaplan Business School. 
+                        I have always been a good time keeper, ambitious about new skills. I have a friendly, collaborating and 
+                        helpful nature in me and also a good sense of humour. And able to work independently in busy environments 
+                        and also within a team setting. I am outgoing and tactful and able to listen effectively when solving problems. 
+                        You will definitely get interested knowing me as a Full Stack we developer and have a lot of clean and elegant styling. 
+                        My enthusiasm nature took me up to lots of experiences in production of HTML5 and CSS3 for modern websites.
+                        My motto is  <strong>"LEARN, WORK, SERVE, RESPECT"</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- academic page -->
+        <div id="academics" class="page">
+            <div class="card">
+                <h2>Academic Journey</h2>
+                <table class="edu-table">
+                    <thead><tr><th>Degree</th><th>Institution</th><th>Year</th></tr></thead>
+                    <tbody>
+                        <tr><td>Bachelor's in IT</td><td>Tribhuvan University (Nepal)</td><td>2020</td></tr>
+                        <tr><td>Master's in Information Technology</td><td>Kaplan Business School, Australia</td><td>2024 - Present</td></tr>
+                    </tbody>
+                </table>
+                <div style="margin-top: 1.8rem;">
+                    <h2>Certifications</h2>
+                    <ul style="padding-left: 1.5rem; color: #2c3e50;">
+                        <li>Google Data Analyst</li>
+                        <li>Python for Everybody</li>
+                        <li>CCNA and Cisco Packet Tracer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience page -->
+        <div id="experience" class="page">
+            <div class="card">
+                <h2>Professional Experience</h2>
+                <ul class="exp-list">
+                    <li><strong>IT Manager</strong> @ Edhansar Pvt. Ltd. (2021-2023) <br> <span style="font-weight: normal; font-size: 0.9rem;">Install Software and Hardware components on computer, collaborate with internal and external vendor warehouse for products, resolve technical issues and website maintainance.</span></li>
+                    <li><strong>Disability Support Worker</strong> @ Coinda Pty Ltd (2023-Present) <br> <span style="font-weight: normal; font-size: 0.9rem;">Assisting the people with physical or intellectual disability with daily task, personal care or other physical activities.</span></li>
+                </ul>
+                <div style="margin-top: 1.8rem;">
+                    <h2>Key Skills</h2>
+                    <div class="hobby-grid">
+                        <span class="hobby-badge">JavaScript/React</span>
+                        <span class="hobby-badge">Python & Data Analysis</span>
+                        <span class="hobby-badge">SQL / Database Mgmt</span>
+                        <span class="hobby-badge">IT Support & Networking</span>
+                        <span class="hobby-badge">Cloud (AWS basics)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4 - HOBBIES -->
+        <div id="hobbies" class="page">
+            <div class="card">
+                <h2>Passions & Hobbies</h2>
+                <div class="hobby-grid" style="margin-bottom: 1.5rem;">
+                    <span class="hobby-badge">Coding side projects</span>
+                    <span class="hobby-badge">Tech blogs & AI trends</span>
+                    <span class="hobby-badge">Playing Cricket</span>
+                    <span class="hobby-badge">Sci-Fi & thriller movies</span>
+                    <span class="hobby-badge">Travel & photography</span>
+                </div>
+                <p>I believe hobbies fuel creativity — whether it's analyzing cricket stats or building small web tools, these activities keep me curious and grounded.</p>
+                <div style="margin-top: 1.3rem; background: #eef2ff; border-radius: 1rem; padding: 1rem;">
+                    <p><strong>Current obsession:</strong> Exploring full-stack development & real-time data dashboards.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 5 - CONNECT FORM -->
+        <div id="connect" class="page">
+            <div class="card">
+                <h2>Get in Touch</h2>
+                <p style="margin-bottom: 1.5rem;">Do you have any project or collaboration idea or just say Hi? Fill the form I will get back shortly.</p>
+                
+                <form id="contactForm">
+                    <input type="hidden" name="_subject" value="New message from Bishal's Portfolio">
+                    <div class="form-group">
+                        <input type="text" id="nameInput" name="name" placeholder="Your full name *" autocomplete="off">
+                        <div id="nameError" class="error-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailInput" name="email" placeholder="Email address *">
+                        <div id="emailError" class="error-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="msgInput" rows="4" placeholder="Write your message here... *"></textarea>
+                        <div id="msgError" class="error-msg"></div>
+                    </div>
+                    <button type="submit" class="btn-primary" id="sendBtn">Send Message</button>
+                    <div id="formFeedback" style="margin-top: 1rem;"></div>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chapagainbishal/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/chapagainbishal97" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://www.facebook.com/bishal.chapagain.35" target="_blank" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="dynamicFooter">
+        <span>Bishal Chapagain - IT Student</span>
+    </footer>
+</div>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
