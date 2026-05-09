@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | Bishal Chapagain</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asserts/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+<nav class="glass-nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="academics.html" class="nav-btn">Academics</a>
+        <a href="experience.html" class="nav-btn">Experience</a>
+        <a href="hobbies.html" class="nav-btn">Hobbies</a>
+        <a href="connect.html" class="nav-btn active-page">Connect</a>
+    </div>
+</nav>
+
+<div class="main-wrapper">
+    <div class="pages-container">
+        <div class="page active-page">
+            <div class="card">
+                <h2>Get in Touch</h2>
+                <p style="margin-bottom: 1.5rem;">Do you have any project or collaboration idea or just want to say Hi? Fill the form and I will get back shortly.</p>
+
+                <form id="contactForm">
+                    <input type="hidden" name="_subject" value="New message from Bishal's Portfolio">
+                    <div class="form-group">
+                        <input type="text" id="nameInput" name="name" placeholder="Your full name *" autocomplete="off">
+                        <div id="nameError" class="error-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailInput" name="email" placeholder="Email address *">
+                        <div id="emailError" class="error-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="msgInput" rows="4" placeholder="Write your message here... *"></textarea>
+                        <div id="msgError" class="error-msg"></div>
+                    </div>
+                    <button type="submit" class="btn-primary" id="sendBtn">Send Message</button>
+                    <div id="formFeedback" style="margin-top: 1rem;"></div>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chapagainbishal/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/chapagainbishal97" target="_blank" class="social-link">GitHub</a>
+                    <a href="https://www.facebook.com/bishal.chapagain.35" target="_blank" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Bishal Chapagain - IT Student</span>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

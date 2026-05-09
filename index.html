@@ -2,35 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bishal Chapagain | Portfolio</title>
-
-    <!-- External CSS -->
+    <title>Home | Bishal Chapagain</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="asserts/favicon.png" type="image/x-icon">
 </head>
 <body>
 
-<!-- navigation bar -->
 <nav class="glass-nav">
     <div class="nav-container">
-        <button class="nav-btn" data-page="home">Home</button>
-        <button class="nav-btn" data-page="academics">Academics</button>
-        <button class="nav-btn" data-page="experience">Experience</button>
-        <button class="nav-btn" data-page="hobbies">Hobbies</button>
-        <button class="nav-btn" data-page="connect">Connect</button>
+        <a href="index.html" class="nav-btn active-page">Home</a>
+        <a href="academics.html" class="nav-btn">Academics</a>
+        <a href="experience.html" class="nav-btn">Experience</a>
+        <a href="hobbies.html" class="nav-btn">Hobbies</a>
+        <a href="connect.html" class="nav-btn">Connect</a>
     </div>
 </nav>
 
 <div class="main-wrapper">
     <div class="pages-container">
-
-        <!-- Home page-->
-        <div id="home" class="page">
+        <div class="page active-page">
             <div class="card">
                 <div class="profile-hero">
-                     <div class="avatar-circle">
-                        <img src="bishal.jpg" alt="Bishal Chapagain">
-                     </div>
+                    <div class="avatar-circle">
+                        <img src="asserts/bishal.jpg" alt="Bishal Chapagain">
+                    </div>
                     <div class="hero-text">
                         <h1>Bishal Chapagain</h1>
                         <div class="tagline">Master's in IT | Tech Enthusiast & Problem Solver</div>
@@ -38,118 +33,21 @@
                 </div>
                 <div>
                     <h2>About Me</h2>
-                    <p>Hi! I am Bishal Chapagain, Web Developer and currently pursing <strong>Masters of Information Technology </strong>at Kaplan Business School. 
-                        I have always been a good time keeper, ambitious about new skills. I have a friendly, collaborating and 
-                        helpful nature in me and also a good sense of humour. And able to work independently in busy environments 
-                        and also within a team setting. I am outgoing and tactful and able to listen effectively when solving problems. 
-                        You will definitely get interested knowing me as a Full Stack we developer and have a lot of clean and elegant styling. 
+                    <p>Hi! I am Bishal Chapagain, Web Developer and currently pursing <strong>Masters of Information Technology</strong> at Kaplan Business School.
+                        I have always been a good time keeper, ambitious about new skills. I have a friendly, collaborating and
+                        helpful nature in me and also a good sense of humour. And able to work independently in busy environments
+                        and also within a team setting. I am outgoing and tactful and able to listen effectively when solving problems.
+                        You will definitely get interested knowing me as a Full Stack web developer and have a lot of clean and elegant styling.
                         My enthusiasm nature took me up to lots of experiences in production of HTML5 and CSS3 for modern websites.
-                        My motto is  <strong>"LEARN, WORK, SERVE, RESPECT"</strong></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- academic page -->
-        <div id="academics" class="page">
-            <div class="card">
-                <h2>Academic Journey</h2>
-                <table class="edu-table">
-                    <thead><tr><th>Degree</th><th>Institution</th><th>Year</th></tr></thead>
-                    <tbody>
-                        <tr><td>Bachelor's in IT</td><td>Tribhuvan University (Nepal)</td><td>2020</td></tr>
-                        <tr><td>Master's in Information Technology</td><td>Kaplan Business School, Australia</td><td>2024 - Present</td></tr>
-                    </tbody>
-                </table>
-                <div style="margin-top: 1.8rem;">
-                    <h2>Certifications</h2>
-                    <ul style="padding-left: 1.5rem; color: #2c3e50;">
-                        <li>Google Data Analyst</li>
-                        <li>Python for Everybody</li>
-                        <li>CCNA and Cisco Packet Tracer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Experience page -->
-        <div id="experience" class="page">
-            <div class="card">
-                <h2>Professional Experience</h2>
-                <ul class="exp-list">
-                    <li><strong>Graphic Designer Internship</strong> @ DurbarMart Online Shopping <br> <span style="font-weight: normal; font-size: 0.9rem;">Design or create graphics to meet specific commercial or promotional needs, such as packaging, displays, or logos. May use a variety of mediums to achieve artistic or decorative effects.</span></li>
-                    <li><strong>IT Manager</strong> @ Edhansar Pvt. Ltd. (2021-2023) <br> <span style="font-weight: normal; font-size: 0.9rem;">Install Software and Hardware components on computer, collaborate with internal and external vendor warehouse for products, resolve technical issues and website maintainance.</span></li>
-                    <li><strong>Disability Support Worker</strong> @ Coinda Pty Ltd (2023-Present) <br> <span style="font-weight: normal; font-size: 0.9rem;">Assisting the people with physical or intellectual disability with daily task, personal care or other physical activities.</span></li>
-                    
-                </ul>
-                <div style="margin-top: 1.8rem;">
-                    <h2>Key Skills</h2>
-                    <div class="hobby-grid">
-                        <span class="hobby-badge">JavaScript/React</span>
-                        <span class="hobby-badge">Python & Data Analysis</span>
-                        <span class="hobby-badge">SQL / Database Mgmt</span>
-                        <span class="hobby-badge">IT Support & Networking</span>
-                        <span class="hobby-badge">Cloud (AWS basics)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PAGE 4 - HOBBIES -->
-        <div id="hobbies" class="page">
-            <div class="card">
-                <h2>What I'm Into</h2>
-                <div class="hobby-grid" style="margin-bottom: 1.5rem;">
-                    <span class="hobby-badge">Coding</span>
-                    <span class="hobby-badge">Read blogs & Novels</span>
-                    <span class="hobby-badge">Playing Cricket</span>
-                    <span class="hobby-badge">Sci-Fi & thriller movies</span>
-                    <span class="hobby-badge">Travel & photography</span>
-                    <span class="hobby-badge">Cooking</span>
-                </div>
-                <div style="margin-top: 1.3rem; background: #eef2ff; border-radius: 1rem; padding: 1rem;">
-                    <p><strong>Current obsession:</strong> Exploring full-stack development & real-time data dashboards.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PAGE 5 - CONNECT FORM -->
-        <div id="connect" class="page">
-            <div class="card">
-                <h2>Get in Touch</h2>
-                <p style="margin-bottom: 1.5rem;">Do you have any project or collaboration idea or just say Hi? Fill the form I will get back shortly.</p>
-                
-                <form id="contactForm">
-                    <input type="hidden" name="_subject" value="New message from Bishal's Portfolio">
-                    <div class="form-group">
-                        <input type="text" id="nameInput" name="name" placeholder="Your full name *" autocomplete="off">
-                        <div id="nameError" class="error-msg"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="emailInput" name="email" placeholder="Email address *">
-                        <div id="emailError" class="error-msg"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" id="msgInput" rows="4" placeholder="Write your message here... *"></textarea>
-                        <div id="msgError" class="error-msg"></div>
-                    </div>
-                    <button type="submit" class="btn-primary" id="sendBtn">Send Message</button>
-                    <div id="formFeedback" style="margin-top: 1rem;"></div>
-                </form>
-
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/chapagainbishal/" target="_blank" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/chapagainbishal97" target="_blank" class="social-link">GitHub</a>
-                    <a href="https://www.facebook.com/bishal.chapagain.35" target="_blank" class="social-link">Facebook</a>
+                        My motto is <strong>"LEARN, WORK, SERVE, RESPECT"</strong></p>
                 </div>
             </div>
         </div>
     </div>
-    <footer id="dynamicFooter">
+    <footer>
         <span>Bishal Chapagain - IT Student</span>
     </footer>
 </div>
 
-<!-- External JavaScript -->
-<script src="script.js"></script>
 </body>
 </html>
